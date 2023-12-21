@@ -2,11 +2,8 @@ spring:
   application:
     name: eureka-server
 
-eureka:
-  client:
-    #telling the server not to register himself in the service registry
-    fetch-registry: false
-    register-with-eureka: false
-
-server:
-  port: 8761
+  cloud:
+    config:
+      uri: http://localhost:9999
+      username: root
+      password: Luca
